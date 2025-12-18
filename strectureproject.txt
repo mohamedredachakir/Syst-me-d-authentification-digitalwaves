@@ -1,0 +1,46 @@
+digitalwaves/
+│
+├── public/
+│   ├── index.php         
+│   └── .htaccess         
+│
+├── controller/
+│   ├── home.php
+│   ├── about.php
+│   ├── services.php
+│   ├── contact.php
+│   │
+│   └── auth/
+│       ├── login.php
+│       ├── logout.php
+│       └── profile.php
+│       └── signup.php
+│
+│ 
+│ 
+├── views/
+│   ├── home.views.php
+│   ├── about.views.php
+│   ├── services.views.php
+│   ├── contact.views.php
+│   ├── 404.php
+│   │
+│   │── layouts/
+│   │   ├── header.php         
+│   │   └── footer.php
+│   │
+│   └── auth/
+│       ├── login.views.php
+│       └── profile.views.php
+│       └── signup.views.php
+│
+├── core/
+│   ├── Database.php
+│
+├── config/
+│   └── database.php
+│
+├── schema.sql
+│
+└── assets/
+    
