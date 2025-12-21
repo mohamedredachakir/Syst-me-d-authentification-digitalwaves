@@ -2,6 +2,7 @@
 
 <?php 
 
+require_once './../helpers/flash.login.php';
 
 $email = $_POST['email'];
 $password = $_POST['password'];
@@ -20,6 +21,8 @@ if($result->num_rows === 1){
 
         header("Location: /");
         exit();
+
+        
     }
 }
 ?>

@@ -18,7 +18,8 @@ $stmt->bind_param(
 );
 
 if($stmt->execute()){
-
+        header("Location: /");
+        exit();
 }
 
 ?>

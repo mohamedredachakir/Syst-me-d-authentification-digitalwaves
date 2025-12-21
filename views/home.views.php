@@ -1,82 +1,35 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DigitalWave — Accueil</title>
-  <script src="https://cdn.tailwindcss.com"></script>
 
-  <style>
-    @keyframes float {
-      0%,100% { transform: translateY(0) }
-      50% { transform: translateY(-30px) }
-    }
-    @keyframes pulseRing {
-      0% { transform: scale(0.8); opacity: 0.9 }
-      100% { transform: scale(1.6); opacity: 0 }
-    }
-    @keyframes glow {
-      0% { box-shadow: 0 0 15px #22C55E }
-      50% { box-shadow: 0 0 45px #22C55E }
-      100% { box-shadow: 0 0 15px #22C55E }
-    }
-    .float { animation: float 6s ease-in-out infinite }
-    .ring::before {
-      content:"";
-      position:absolute;
-      inset:-25px;
-      border:2px solid #22C55E;
-      border-radius:9999px;
-      animation: pulseRing 2s linear infinite;
-    }
-    .glow { animation: glow 2s infinite }
-  </style>
-</head>
+<link rel="stylesheet" href="/assest/css/home.css">
 
-<body class="bg-[#0F172A] text-white overflow-hidden">
+<section class="flex flex-col md:flex-row min-h-screen px-10 md:px-24 items-center">
 
-<section class="relative min-h-screen flex items-center justify-center">
-
-  <div class="absolute w-[500px] h-[500px] bg-[#22C55E]/20 blur-[160px] top-[-120px] left-[-120px] float"></div>
-  <div class="absolute w-[450px] h-[450px] bg-[#22C55E]/15 blur-[160px] bottom-[-120px] right-[-120px] float"></div>
-
-  <div class="relative z-10 text-center max-w-5xl px-6">
-
-    <h1 class="text-[3.5rem] md:text-[5rem] font-extrabold leading-tight mb-8">
-      DIGITAL<span class="text-[#22C55E]">WAVE</span>
+  <div class="md:w-1/2 flex flex-col justify-center h-full space-y-6 text-left z-10">
+    <h1 class="text-5xl md:text-6xl font-extrabold leading-tight animate-fadeIn">
+      DIGITAL<span class="text-[#9B59B6]">WAVE</span>
     </h1>
-
-    <h2 class="text-3xl md:text-5xl font-bold mb-10">
-      Transformez votre idée
-      <br>
-      <span class="text-[#22C55E]">en projet digital</span>
-    </h2>
-
-    <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-14">
-      Une expérience moderne, artistique et performante pour propulser votre marque
-      à un niveau supérieur.
+    <p class="text-gray-300 text-lg md:text-xl max-w-lg animate-fadeIn delay-200">
+      Transformez votre idée en projet digital avec une expérience moderne, élégante et performante.
     </p>
-
-    <div class="flex flex-col md:flex-row justify-center items-center gap-10">
-
+    <div class="flex flex-wrap gap-6 mt-6">
       <a href="/services"
-         class="relative ring bg-[#22C55E] text-black px-16 py-4 rounded-full text-lg font-bold
-                transform transition hover:scale-110 glow">
+         class="px-8 py-3 bg-[#9B59B6] text-white rounded-full font-semibold hover:scale-105 transition-transform">
         Nos services
       </a>
-
       <a href="/contact"
-         class="relative border-2 border-[#22C55E] text-[#22C55E]
-                px-16 py-4 rounded-full text-lg font-bold
-                transform transition hover:bg-[#22C55E] hover:text-black hover:scale-110">
+         class="px-8 py-3 border-2 border-[#9B59B6] rounded-full hover:bg-[#9B59B6] hover:text-white transition-colors">
         Contactez-nous
       </a>
-
     </div>
+  </div>
 
+  <div class="md:w-1/2 relative mt-10 md:mt-0 flex justify-end">
+    <div class="relative w-full h-[400px]">
+      <div class="absolute w-72 h-72 bg-[#9B59B6]/20 rounded-full top-[-80px] left-[-60px] animate-blob"></div>
+      <div class="absolute w-96 h-96 bg-[#9B59B6]/10 rounded-full bottom-[-120px] right-[-80px] animate-blob delay-200"></div>
+      <div class="absolute w-64 h-64 bg-[#9B59B6]/20 rounded-full top-[150px] right-[50px] animate-blob delay-400"></div>
+      <img src="https://ninjasites.com/images/blog/webpage-creation.png?v=1684153977260389102"
+           class="relative rounded-2xl shadow-2xl w-full h-full object-cover" alt="Digital Team">
+    </div>
   </div>
 
 </section>
-
-</body>
-</html>
