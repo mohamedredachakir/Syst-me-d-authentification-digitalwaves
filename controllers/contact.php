@@ -25,23 +25,27 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
     if(empty($message)){
         $errors['message'] = 'enter votre message';
     }
-    if(empty($errors)){
-        $to = "chakirm082@gmail.com";
-        $sub = "message contact";
-        $body = "
-        nom : $name
-        email : $email
-        message : $message;
-        ";
-        $headers = "from: $email\r\n";
-        if(mail($to,$sub,$body,$headers)){
-        $success = 'merci pour votre message';
-        $name = $message = $email = '';
-        }
-        else{
-            $errors['send']='erreurs d`envoi';
-        }
-    }
+    // if(empty($errors)){
+    //     $to = "chakirm082@gmail.com";
+    //     $sub = "message contact";
+    //     $body = "
+    //     nom : $name
+    //     email : $email
+    //     message : $message;
+    //     ";
+    //     $headers = "from: $email\r\n";
+    //     if(mail($to,$sub,$body,$headers)){
+    //     $success = 'merci pour votre message';
+    //     $name = $message = $email = '';
+    //     }
+    //     else{
+    //         $errors['send']='erreurs d`envoi';
+    //     }
+    // }
+}
+
+if($_SERVER['REQUEST_METHOD']=='POST'){
+    require './../services/auth.contact.php';
 }
 
 require __DIR__ .'/../views/contact.views.php';
