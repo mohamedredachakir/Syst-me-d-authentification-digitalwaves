@@ -1,9 +1,17 @@
+
 <?php
 
 session_start();
 include_once __DIR__ . '/../config/database.php';
 
+require_once './../helpers/flash.login.php';
 
+$flash = getflash();
+if($flash){
+    echo "<div class='{$flash['type']}' style='padding:10px; margin:10px 0; border-radius:5px;'>";
+    echo $flash['message'];
+    echo "</div>";
+}
 $uri = parse_url($_SERVER['REQUEST_URI'],PHP_URL_PATH);
 $uri = trim($uri,'/');
 

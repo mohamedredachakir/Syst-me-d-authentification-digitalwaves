@@ -2,10 +2,10 @@ digitalwaves/
 │
 ├── public/
 │   ├── index.php         
-│   └── .htaccess 
-├── assest/
-│   ├── css/        
-│   └── js/         
+│   ├── .htaccess 
+│   └──assest/
+│       ├── css/        
+│       └── js/         
 │
 ├── controller/
 │   ├── home.php
@@ -37,8 +37,18 @@ digitalwaves/
 │       └── profile.views.php
 │       └── signup.views.php
 │
+├── services/
+│   ├── auth.login.php
+│   ├──auth.signup.php
+│   ├──auth.profile.php
+│   └──auth.contact.php
+│ 
+├── helpers/
+│   └── flash.login.php
+│ 
+│ 
 ├── core/
-│   ├── data.services.php
+│   └── data.services.php
 │
 ├── config/
 │   └── database.php

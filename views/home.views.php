@@ -1,4 +1,6 @@
 
+
+
 <link rel="stylesheet" href="/assest/css/home.css">
 
 <section class="flex flex-col md:flex-row min-h-screen px-10 md:px-24 items-center">
