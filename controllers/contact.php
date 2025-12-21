@@ -4,7 +4,7 @@
 
 $title = 'contact';
 
-require 'template/header.php';
+require  __DIR__ . '/../views/layouts/header.php';
 
 $name = $email = $message = '';
 
@@ -44,8 +44,8 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
     }
 }
 
-require 'views/contact.views.php';
+require __DIR__ .'/../views/contact.views.php';
 
-require 'template/footer.php';
+require __DIR__ . '/../views/layouts/footer.php';
 
 ?>

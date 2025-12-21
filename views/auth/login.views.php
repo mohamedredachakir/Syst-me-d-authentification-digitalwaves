@@ -5,9 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Digital Waves</title>
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <!-- Tailwind CSS CDN for fast styling -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
     body {
@@ -37,7 +35,7 @@
 
     p {
         text-align: center;
-        color: #6b7280; /* gray-500 */
+        color: #6b7280; 
         margin-bottom: 1.5rem;
     }
 
@@ -46,7 +44,7 @@
         width: 100%;
         padding: 12px 16px;
         margin-bottom: 1rem;
-        border: 1px solid #d1d5db; /* gray-300 */
+        border: 1px solid #d1d5db; 
         border-radius: 10px;
         outline: none;
         font-size: 1rem;
@@ -55,13 +53,13 @@
 
     input[type="email"]:focus,
     input[type="password"]:focus {
-        border-color: #3b82f6; /* blue-500 */
+        border-color: #3b82f6; 
         box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
     }
 
     .btn-primary {
         width: 100%;
-        background-color: #3b82f6; /* blue-500 */
+        background-color: #3b82f6;
         color: white;
         font-weight: 600;
         padding: 12px;
@@ -72,7 +70,7 @@
     }
 
     .btn-primary:hover {
-        background-color: #2563eb; /* blue-600 */
+        background-color: #2563eb; 
     }
 
     .text-center {
@@ -123,7 +121,7 @@
             </div>
         <?php endif; ?>
 
-        <form action="/auth/login_process.php" method="POST" class="space-y-5">
+        <form action="" method="POST" class="space-y-5">
             <div>
                 <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
                 <input type="email" name="email" id="email" class="input-style" placeholder="you@example.com" required>

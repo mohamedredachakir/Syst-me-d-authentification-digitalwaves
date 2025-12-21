@@ -1,9 +1,13 @@
 <?php
 
-session_start();
-
 if (isset($_SESSION['user_id'])) {
     header("Location: /");
     exit();
 }
+
+if($_SERVER['REQUEST_METHOD']=='POST'){
+    require './../services/auth.service.php';
+}
+
+require './../views/auth/signup.views.php';
 ?>

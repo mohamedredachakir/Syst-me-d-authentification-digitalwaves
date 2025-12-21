@@ -1,4 +1,4 @@
-<?php require 'data/data.services.php'; ?>
+<?php require __DIR__ .'/../core/data.services.php'; ?>
 
 <body class="bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 text-white min-h-screen overflow-x-hidden">
 
