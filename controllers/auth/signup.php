@@ -6,7 +6,7 @@ if (isset($_SESSION['user_id'])) {
 }
 
 if($_SERVER['REQUEST_METHOD']=='POST'){
-    require './../services/auth.service.php';
+    require './../services/auth.signup.php';
 }
 
 require './../views/auth/signup.views.php';

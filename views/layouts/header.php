@@ -44,9 +44,9 @@
         <div class="flex items-center space-x-3">
 
          
-          <div class="w-9 h-9 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold">
+          <a href="/profile"><div class="w-9 h-9 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold">
             <?= strtoupper($_SESSION['user_name'][0]) ?>
-          </div>
+          </div></a>
 
           
           <span class="text-sm font-medium">
