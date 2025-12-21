@@ -19,7 +19,7 @@ $routes = [
     'login'     => 'auth/login.php',
     'signup'    => 'auth/signup.php',
     'logout'    => 'auth/logout.php',
-    'profile'   => 'auth/profile.php',
+    'profile'   => 'auth/profil.php',
 ];
 
 if(array_key_exists($uri,$routes)){
